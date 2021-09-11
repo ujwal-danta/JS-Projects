@@ -67,9 +67,9 @@ const checkPassword = (password,password2)=>{
 form.addEventListener("submit",function(event){
 event.preventDefault();    
 checkInput([username,email,password,password2]);
+checkPassword(password,password2)
 checkLength(username,3,15);
 checkLength(password,6,20);
 checkLength(password2,6,20);
 validateEmail(email);
-checkPassword(password,password2)
 })
